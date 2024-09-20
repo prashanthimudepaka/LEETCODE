@@ -1,6 +1,6 @@
 '''
 3270. Find the Key of the Numbers
-Status:easy
+Status:easy 19/9/24
 You are given three positive integers num1, num2, and num3.
 
 The key of num1, num2, and num3 is defined as a four-digit number such that:
