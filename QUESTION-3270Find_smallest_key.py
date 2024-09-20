@@ -45,7 +45,7 @@ Output: 1
 1 <= num1, num2, num3 <= 9999
 '''
 class Solution:
-    def generateKey(self, num1: int, num2: int, num3: int) -> int:
+    def generateKey(self, num1: int, num2: int, num3):
         s1 = str(num1)
         s2 = str(num2)
         s3 = str(num3)
