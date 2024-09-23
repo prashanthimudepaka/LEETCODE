@@ -1,8 +1,7 @@
+
 '''
-
-53. Maximum Subarray 
-status:medium  18/09/24
-
+53. Maximum Subarray
+status: copy
 Given an integer array nums, find the 
 subarray
  with the largest sum, and return its sum.
@@ -31,7 +30,6 @@ Constraints:
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104
 '''
-
 class Solution:
     def maxSubArray(self, nums):
         sum=nums[0]
@@ -43,8 +41,7 @@ class Solution:
                 sum=nums[i]
             ans=max(ans,sum)
         return ans
-ss=Solution()
-print(ss.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+
 
 '''greater=0
         n = len(nums)

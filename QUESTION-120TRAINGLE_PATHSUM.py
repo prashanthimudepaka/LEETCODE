@@ -48,7 +48,10 @@ dp= [11, 10, 10, 3, 0]
    (7)6 (6)5  7(10)
 
  (0)4  (0)1   (0)8   3(0) 
-0     0     0     0     0     
+0     0     0     0     0    
+dp=[0,0,0,0,0] 
+
+
 
 '''
 print(dp[0]) #output =The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 
@@ -58,4 +61,19 @@ print(dp[0]) #output =The minimum path sum from top to bottom is 2 + 3 + 5 + 1 =
   6 5 7
  4 1 8 3
 0 0 0 0 0   <-len(triangle)+1
+'''
+'''
+    0 1  2  3 4
+dp =[0,0,0,0,0]
+triangle[-1]=4,1,8,3
+             0 1 2 3
+          dp[0]=4+min(0,0)==4
+          dp[1]=1+min(0,0)==1
+          dp[2]=8
+          dp[3]=3
+    triangle[-2]=6,5,7
+    dp[0]=6+min(4,1)=7
+    dp[1]=
+
+
 '''
