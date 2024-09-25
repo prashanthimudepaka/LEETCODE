@@ -1,6 +1,6 @@
 '''
 2259. Remove Digit From Number to Maximize Result
-status:easy
+status:easy/contest
 23/09/24
 You are given a string number representing a positive integer and a character digit.
 
