@@ -60,3 +60,4 @@ public:
         return a[n-1];
     }
 };
+

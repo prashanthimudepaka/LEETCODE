@@ -1,4 +1,4 @@
-/*
+/*QUESTION-3174ClearDigits
 status: easy
 28/09/24
 You are given a string s.
