@@ -35,7 +35,75 @@ Constraints:
 -105 <= nums[i] <= 105
 
 '''
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        
+        x=[]
+        l=0
+        h=len(nums)-1
+        nums.sort()
+        x = []
+        for k in range(0, len(nums)):
+            if  k>0 and nums[k] == nums[k - 1]:
+                continue  # Skip duplicate elements for k
 
+            l = k + 1
+            h = len(nums) - 1   
+
+            while l < h:
+                current_sum = nums[l] + nums[h]
+                if current_sum == -nums[k]: 
+                    x.append([nums[k], nums[l], nums[h]])
+                    l += 1
+                    h -= 1
+
+                    # Skip duplicates for the second and third elements
+                    while l < h and nums[l] == nums[l - 1]:
+                        l += 1
+                    while l < h and nums[h] == nums[h + 1]:
+                        h -= 1
+
+                elif current_sum > -nums[k]:
+                    h -= 1
+                else:
+                    l += 1
+
+        return x
+      
+        '''
+        x=[]
+        l=0
+        h=len(nums)-1
+        nums.sort()
+        for k in range(0,len(nums)):
+            
+            while(l<h):
+                if nums[l]+nums[h]==(-nums[k]):
+                    x.append([nums[l],nums[h],nums[k]])
+                    l=l+1
+                    h=h-1
+                elif nums[l]+nums[h]>nums[k]:
+                    h=h-1
+                else:
+                    l=l+1
+        return x
+       '''
+        
+        '''x=[]
+       s=set()
+       nums.sort()
+       se=set()
+       for i in range(len(nums)-2):
+            for j in range(i+1,len(nums)-1):
+                for k in range(j+1,len(nums)):
+                    if nums[i]+nums[j]+nums[k]==0:
+                        
+                        x.append([nums[i],nums[j],nums[k]])
+                        
+                        se={tuple(i) for i in x}
+
+       return se'''
+'''
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         
@@ -57,7 +125,7 @@ class Solution:
         return x
       
        
-        
+  '''      
         '''x=[]
        s=set()
        nums.sort()
