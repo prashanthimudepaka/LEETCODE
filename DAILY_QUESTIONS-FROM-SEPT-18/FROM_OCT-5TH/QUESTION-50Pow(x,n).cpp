@@ -47,3 +47,24 @@ public:
   return ans;
     }
 };
+/*
+bruteforce approach
+ans=1
+for(int i=1;i<=n;i++)
+{
+ans=ans*x;
+
+}
+return ans;
+2^4
+
+(2*2)^2
+
+(x*x)^n/2
+
+2^2
+(2*2)^1
+2^1
+
+
+(2*2)^0 */
