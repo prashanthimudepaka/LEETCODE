@@ -1,6 +1,7 @@
 //3300. Minimum Element After Replacement With Digit Sum
 //STATUS: EASY
 //DATE:12-10-24
+//contest
 //https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/description/
 class Solution {
 public:
