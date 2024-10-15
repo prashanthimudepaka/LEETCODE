@@ -1,7 +1,7 @@
 /*
 2938. Separate Black and White Balls
 
-date: 15-10-24
+date: 14-10-24
 https://leetcode.com/problems/separate-black-and-white-balls/description/?envType=daily-question&envId=2024-10-15
 
 status:medium(daily challenge)
