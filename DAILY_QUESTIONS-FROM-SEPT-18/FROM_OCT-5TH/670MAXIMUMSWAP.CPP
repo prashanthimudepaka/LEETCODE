@@ -8,7 +8,6 @@ You are given an integer num. You can swap two digits at most once to get the ma
 Return the maximum valued number you can get.
 
  
-
 Example 1:
 
 Input: num = 2736
